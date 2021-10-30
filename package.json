@@ -1,0 +1,24 @@
+{
+    "name": "lss_einsatz_fahrzeughelfer",
+    "version": "1.0.0",
+    "description": "ein Discord-Bot fuer das Leitstellenspiel",
+    "main": "index.js",
+    "scripts": {
+        "test": "node index.js debug",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DrTraxx/lss_einsatz_fahrzeughelfer.git"
+    },
+    "author": "DrTraxx",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DrTraxx/lss_einsatz_fahrzeughelfer/issues"
+    },
+    "homepage": "https://github.com/DrTraxx/lss_einsatz_fahrzeughelfer#readme",
+    "dependencies": {
+        "discord.js": "^13.2.0",
+        "axios": "^0.24.0"
+    }
+}
