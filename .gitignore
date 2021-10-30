@@ -5,6 +5,8 @@
 /node_modules/*
 storage/
 
+package-lock.json
+
 config.json
 database.json
 database.dev.json
