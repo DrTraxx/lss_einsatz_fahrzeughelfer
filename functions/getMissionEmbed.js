@@ -32,7 +32,6 @@ module.exports = {
                                     misReq += `benötigtes Wasser: ${ mission.requirements[key].toLocaleString() } Liter\n`;
                                 } else {
                                     var keyClass = aVehicleTypes.find(t => t.class[0] === key).class_alias[0];
-                                    misReq += keyClass + ": " + mission.requirements[key] + "\n";
                                     misReq += `${ keyClass }: ${ mission.requirements[key] }\n`;
                                 }
                             }
