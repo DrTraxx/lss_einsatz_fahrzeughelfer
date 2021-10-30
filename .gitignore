@@ -6,6 +6,7 @@
 storage/
 
 package-lock.json
+.npmrc
 
 config.json
 database.json

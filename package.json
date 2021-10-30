@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/DrTraxx/lss_einsatz_fahrzeughelfer.git"
+        "url": "git://github.com/DrTraxx/lss_einsatz_fahrzeughelfer.git"
     },
     "author": "DrTraxx",
     "license": "MIT",
