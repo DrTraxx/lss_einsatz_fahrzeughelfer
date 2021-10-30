@@ -1,0 +1,10 @@
+{
+    "token": "BOT_TOKEN",
+    "prefix": "%",
+    "bot_owner": 1234567890,
+    "guilds": [{
+        "id": "SERVER_ID",
+        "update_channel": "CHANNEL_ID",
+        "name": "SERVER_NAME"
+    }]
+}
