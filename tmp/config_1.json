@@ -1,0 +1,16 @@
+{
+    "token": "ODY0NDE5MjU0NzA2NzY1ODI0.YO1LKg.BpQIjPS-sVMnroE9gKxsuAr11w8",
+    "prefix": "%",
+    "bot_owner": 610198846219485184,
+    "guilds": [{
+            "id": "702996171844485252",
+            "update_channel": "703002302948311051",
+            "name": "KITT"
+        },
+        {
+            "id": "833654381306970123",
+            "update_channel": "833679397630378044",
+            "name": "Leitstellenspiel Community"
+        }
+    ]
+}
