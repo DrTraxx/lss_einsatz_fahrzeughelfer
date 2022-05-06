@@ -62,7 +62,8 @@ module.exports = {
                                         var expNames = () => {
                                             const output = [];
                                             for (var idx in addVal) {
-                                                output.push(aMissions.find(m => m.id == addVal[idx]).name);
+                                                var foundExp = aMissions.find(m => m.id == addVal[idx]);
+                                                output.push(`${ foundExp.name } (${ foundExp.id })`);
                                             }
                                             return output;
                                         }
@@ -72,7 +73,8 @@ module.exports = {
                                         var folNames = () => {
                                             const output = [];
                                             for (var idx in addVal) {
-                                                output.push(aMissions.find(m => m.id == addVal[idx]).name);
+                                                var foundFol = aMissions.find(m => m.id == addVal[idx]);
+                                                output.push(`${ foundFol.name } (${ foundFol.id })`);
                                             }
                                             return output;
                                         }

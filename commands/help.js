@@ -3,14 +3,16 @@ const Discord = require("discord.js");
 module.exports = {
     name: "help",
     description: "help command",
-    execute(message, args, client) {
-        const embed = new Discord.MessageEmbed()
+    async execute(message, args, client) {
+        const prefix = client.config.prefix,
+            embed = new Discord.MessageEmbed()
             .setColor(34047)
             .setThumbnail("https://bquadrat.berlin/wp-content/uploads/2014/10/Fragezeichen.jpg")
             .setTitle("LSS-Commands")
-            .setDescription("%fahrzeug `X` - Infos zum Fahrzeug `X`\n%einsatz `X` - Infos zum Einsatz `X`");
+            .setDescription(`${ prefix }fahrzeug \`X\` - Infos zum Fahrzeug \`X\`\n${ prefix }einsatz \`X\` - Infos zum Einsatz \`X\``);
 
         try {
+            await message.delete();
             message.channel.send({ embeds: [embed] });
         } catch (error) {
             console.error(error);
