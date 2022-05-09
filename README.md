@@ -41,6 +41,10 @@ Ein Discord-Bot fuer das Leitstellenspiel
 
 ## Changelog
 
+### v 1.0.2
+
+-   main-JS-file umbenannt
+
 ### v 1.0.1
 
 -   Einen Fehler behoben, der die benötigten Fahrzeuge des Einsatzes doppelt anzeigt
