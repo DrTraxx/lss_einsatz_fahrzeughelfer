@@ -6,7 +6,7 @@ module.exports = {
         return new Promise(resolve => {
             axios.get("https://www.leitstellenspiel.de/einsaetze.json").then(async missionResponse => {
                 const aMissions = missionResponse.data;
-                const missions = aMissions.filter(m => m.id == target || m.name.toLowerCase() == target.toLowerCase());
+                const missions = aMissions.filter(m => m.id == target || m.name.toLowerCase().includes(target.toLowerCase()));
                 const embeds = [];
                 if (missions.length) {
                     for (var i in missions) {

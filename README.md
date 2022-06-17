@@ -41,6 +41,10 @@ Ein Discord-Bot fuer das Leitstellenspiel
 
 ## Changelog
 
+### v 1.0.3
+
+-   Suche der Fahrzeuge/ Einsätze verfeinert
+
 ### v 1.0.2
 
 -   main-JS-file umbenannt

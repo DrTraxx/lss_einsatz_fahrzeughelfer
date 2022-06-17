@@ -1,6 +1,6 @@
 {
     "name": "lss_einsatz_fahrzeughelfer",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "ein Discord-Bot fuer das Leitstellenspiel",
     "main": "fahrzeughelfer.js",
     "scripts": {

@@ -11,10 +11,11 @@ module.exports = {
 
         axios.get("https://api.lss-cockpit.de/de_DE/vehicletypes.json").then(async vehicleResponse => {
             const aVehicleTypes = vehicleResponse.data;
-            const target = args.trim();
-            const vehicles = aVehicleTypes.filter(v => v.id == target || v.name.toLowerCase() == target.toLowerCase() || v.short_name.toLowerCase() == target.toLowerCase() || v.class.includes(target.toLowerCase()) || (v.class_alias[0] && v.class_alias[0].toLowerCase() == target.toLowerCase()) || (v.class_alias[1] && v.class_alias[1].toLowerCase() == target.toLowerCase()) || (v.class_alias[2] && v.class_alias[2].toLowerCase() == target.toLowerCase()));
+            const target = args.trim().toLowerCase();
+            const vehicles = aVehicleTypes.filter(v => v.id == target || v.name.toLowerCase().includes(target) || v.short_name.toLowerCase().includes(target) ||
+                v.class.includes(target) || v.class_alias.map(e => e.toLowerCase()).includes(target));
             const vehicleAnswer = await require("../functions/getVehicleEmbed.js").execute(vehicles, target);
-            message.delete().then(async() => {
+            message.delete().then(async () => {
                 for (var i in vehicleAnswer) {
                     try {
                         await message.channel.send({ embeds: [vehicleAnswer[i]] });
